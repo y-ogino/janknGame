@@ -29,14 +29,15 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-    Button startButton = findViewById(R.id.start_button);
-    startButton.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v)
-        {
-            Intent intent = new Intent(MainActivity.this, MainGame.class);
-            startActivity(intent);
+        Button startButton = findViewById(R.id.start_button);
+        startButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(MainActivity.this, MainGame.class);
+                startActivity(intent);
 
+            /*
             showImageButton = findViewById(R.id.start_button);
             myImageView = findViewById(R.id.viewpicture);
             imageHelper = new MainGame();
@@ -46,12 +47,8 @@ public class MainActivity extends AppCompatActivity {
             showImageButton.setOnClickListener(view ->{
                 imageHelper.StopImage();
             });
-        }
-    });
-
-
-
-
-
+            */
+            }
+        });
     }
 }
